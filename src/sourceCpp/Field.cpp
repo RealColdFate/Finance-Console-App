@@ -1,4 +1,3 @@
-#include "pch.h"
 #include "Field.h"
 #include <string>
 
@@ -16,7 +15,7 @@ void Field::setName(std::string sName)
 			fieldName = "Temp_Field";
 			return;
 		}
-		fieldName = sName; 
+		fieldName = sName;
 	}
 
 }

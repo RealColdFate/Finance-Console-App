@@ -1,7 +1,6 @@
 // FinanceConsoleApp.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
-#include "pch.h"
 #include <iostream>
 #include <string>
 #include <array>
@@ -23,11 +22,11 @@ int main(int argc, char* argv[])
 	cout << "This is a console application for finance." << endl;
 	cout << "Type \"--help\" for a list of commands or \"quit\" to exit." << endl;
 
-	// Main loop 
+	// Main loop
 	while (sUserInput != "over")
 	{
 		cin >> sUserInput;
-		if (sUserInput != "over") 
+		if (sUserInput != "over")
 		{
 			cout << parseCommand(sUserInput);
 		}
@@ -35,16 +34,16 @@ int main(int argc, char* argv[])
 	}
 
 	cout << "goodbye." << endl;
-	
+
 	return 0;
 }
 
-// Provides user with help options 
+// Provides user with help options
 string help(string str)
 {
 	return "These are the current options: \nYou have entered \"" + str + "\"\n";
 
-	
+
 }
 
 // Reads user input
@@ -54,4 +53,3 @@ string parseCommand(string str)
 
 	return "\"" + str + "\" is not a valid command. \nType \"--help\" for a list of commands or \"quit\" to exit.\n";
 }
-
